@@ -43,6 +43,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+  closure is having all variables and functions defined in the lexical environment. Normally wrapping everything inside of a function.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +67,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+    the const newRoll is declared/initiated inside the function personalDice. the math.random method is being run only within the personalDice function.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+    the name variable will be the same. the newRoll variable could change to a new number.
 c. What is the lexical scope of `newRoll`? 
+    it is within the local/private/block scope. it can only be used or called inside of the (parent)function personalDice.
 
 
 ### Task 3 - Stretch Goals
